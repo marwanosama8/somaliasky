@@ -11,7 +11,7 @@
         "darkaonline/l5-swagger": "^8.3",
         "fruitcake/laravel-cors": "^3.0",
         "doctrine/dbal": "*",
-        "guzzlehttp/guzzle": "^7.0.1",
+        "guzzlehttp/guzzle": "^6.5|^7.0.1",
         "intervention/image": "^2.7",
         "kreait/laravel-firebase": "^4.1",
         "brozot/laravel-fcm": "1.2.*",
