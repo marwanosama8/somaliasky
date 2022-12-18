@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>اضافة اعلان جدبد</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./style/custome.css">
+</head>
+
+<body dir="rtl">
+    <header>
+        <nav class="bg-transparent border-gray-200 px-2 sm:px-4 py-2.5 rounded dark:bg-gray-900">
+            <div class="container justify-between flex flex-wrap items-center  mx-auto">
+                <a href="#" class="flex items-center">
+                    <img src="./imgs/Page-1.png" class="h-9 mr-3 sm:h-9" alt="Flowbite Logo" />
+                </a>
+                <button data-collapse-toggle="navbar-default" type="button"
+                    class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                    aria-controls="navbar-default" aria-expanded="false">
+                    <span class="sr-only">Open main menu</span>
+                    <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd"
+                            d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                            clip-rule="evenodd"></path>
+                    </svg>
+                </button>
+                <div class="hidden w-full md:block md:w-[83%]" id="navbar-default">
+                    <ul
+                        class="flex flex-col p-4 mt-4 border justify-between border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-transparent dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+                        <li>
+                            <a href="#"
+                                class="block py-2 pl-3 pr-4 text-white bg-primary rounded md:bg-transparent md:text-primary md:p-0 dark:text-white"
+                                aria-current="page">الرئيسية</a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-primary md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">الاقسام</a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-primary md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">اللغة</a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-primary md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">المتاجر</a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-primary md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">الدليل
+                                المجاني</a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-primary md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">التسحيل</a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-primary md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">مركز
+                                المساعدة</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="container">
+            <section
+                class=" flex  md:flex-row flex-col flex-wrap items-center p-1  gap-5 border-gray-400 border  rounded-md">
+                <div class="" dir="rtl">
+                    <label for="openDropdown" class="border border-gray-400 dropdown">
+                        <i class="fas fa-map-marker-alt text-primary  mt-1"></i>
+                        <span class="ml-16">تحديد المحافظة</span>
+                        <i class="fas fa-caret-down down"></i>
+                    </label>
+                    <input type="checkbox" id="openDropdown" hidden>
+                    <div class="dropdown-menu">
+                        <span>عنصر</span>
+                        <span>عنصر</span>
+                        <span>عنصر</span>
+                        <span>عنصر</span>
+                    </div>
+                </div>
+                <div class="" dir="rtl">
+                    <label for="openDropdown2" class="border border-gray-400 dropdown">
+                        <i class="fas fas fa-th-large text-primary  mt-1"></i>
+                        <span class="ml-16">تحديد القسم</span>
+                        <i class="fas fa-caret-down down2"></i>
+                    </label>
+                    <input type="checkbox" id="openDropdown2" hidden>
+                    <div class="dropdown-menu2">
+                        <span>عنصر</span>
+                        <span>عنصر</span>
+                        <span>عنصر</span>
+                        <span>عنصر</span>
+                    </div>
+                </div>
+                <div class="grow">
+                    <div class="flex ">
+                        <input type="text" id="first_name"
+                            class="bg-white border border-gray-400 text-black text-sm rounded-sm focus:ring-blue-500 focus:border-blue-500 block w-full p-1.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                            placeholder="ادخل كلمات بحثك" required>
+                        <button class="bg-primary w-10 rounded-l-md text-white "><i class="fas fa-search"></i></button>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </header>
+
+    <nav class=" mt-5 md:hidden px-2 bg-white border-gray-200 dark:bg-gray-900 dark:border-gray-700">
+        <div class="container flex flex-wrap items-center justify-between mx-auto">
+            <a href="#" class="flex items-center">
+                <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white">دردشاتي</span>
+            </a>
+            <button data-collapse-toggle="navbar-dropdown" type="button"
+                class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                aria-controls="navbar-dropdown" aria-expanded="false">
+                <span class="sr-only">Open main menu</span>
+                <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd"
+                        d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                        clip-rule="evenodd"></path>
+                </svg>
+            </button>
+            <div class="hidden w-full md:block md:w-auto" id="navbar-dropdown">
+                <ul
+                    class="flex flex-col p-4 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+
+                    <li>
+                        <a href="#"
+                            class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">خالد
+                            البغدادي <span class="px-2 py-1 mr-5 bg-red-700 rounded-[50%] text-white">1</span></a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">خالد
+                            البغدادي <span class="px-2 py-1 mr-5 bg-red-700 rounded-[50%] text-white">1</span></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <div dir="ltr" class="flex items-start gap-4 container justify-center mt-8">
+        <div class="max-w-screen-md  w-full flex flex-col h-screen max-h-screen rounded-xl overflow-hidden" id="chat">
+            <div class="messages flex-1 overflow-y-scroll border-box bg-white">
+                <div class="flex flex-col gap-4 my-8 justify-center text-center items-center">
+                    <i class="fas fa-exclamation-triangle fa-5x"></i>
+                    <h1 class="">يرجى عدم مشاركة أي بيانات شخصية مثل رقم الهاتف والبريد , لعدم فقدان الضمان</h1>
+                </div>
+                <div class="message-row flex flex-row">
+                    <div
+                        class="message m-2 p-4 bg-gray-100 border-2 border-gray-300    rounded-2xl max-w-full inline relative shadow">
+                        <p class="message-content">اهلا اخوي , حياك الله , بخصوص المنتج يلي منزلينه هاد عرض للعائلة
+                            عباره عن بكيت بكفي 12 شخص دجاج</p>
+                    </div>
+                </div>
+                <div class="message-row flex flex-row-reverse text-white">
+                    <div class="message m-2 p-4 pb-8 bg-primary rounded-2xl max-w-full inline relative shadow">
+                        <p class="message-content">مرحبا , عندي سؤال مهم جدا كثير , عن المنتج يلي انتا
+                            كنت منزله من أسبوع على الموقع هاد </p>
+
+                    </div>
+                </div>
+
+            </div>
+            <div dir="rtl" class="message-input  items-center bg-gray-100 gap-3 p-4 flex flex-row">
+                <div class="flex w-full">
+                    <input class="flex-1 p-2 rounded inhert" type="text" />
+                    <div class="flex  justify-center rounded-l-lg px-6 bg-primary items-center gap-2">
+                        <a href="#"><i class="fas text-white fa-file fa-lg"></i></a>
+                        <a href="#">
+                            <i class="fas fa-microphone fa-lg text-white"></i>
+                        </a>
+                        <a href="#"><i class="fas fa-image fa-lg text-white"></i></a>
+                    </div>
+                </div>
+                <div class="text-center md:w-[32%] w-[22%]">
+                    <a href="#"
+                        class="text-white rounded bg-primary inline-block px-6 py-3 justify-center items-center">ارسال
+                        رسالة</a>
+                </div>
+            </div>
+        </div>
+        <div class="md:flex hidden items-end w-1/3 flex-col rounded-md bg-white p-2     ">
+            <div class="flex py-4 justify-between gap-4 flex-col w-full items-end">
+                <div class="">
+                    <h3 class="text-3xl font-bold">دردشاتي</h3>
+                </div>
+                <div class="w-full h-0.5 bg-gray-300 mt-4"></div>
+            </div>
+            <div class="flex py-4 hover:bg-gray-500 duration-300 justify-between gap-4 items-center">
+
+                <div class="flex  items-start justify-start w-[40%]">
+                    <h1 class="px-2 py-1 bg-red-700 rounded-[50%] text-white">1</h1>
+                </div>
+                <h3 class="w-full font-bold inline-block text-center">خالد مقدادي</h3>
+                <img src="./imgs/1975193_10152246837917591_523328716_n.png" class="w-[40%]" alt="">
+            </div>
+            <div class="w-full h-0.5 bg-gray-300 mt-4"></div>
+
+            <div class="flex hover:bg-gray-500 duration-300 py-4 justify-between gap-4 items-center">
+                <div class="flex  items-start justify-start w-[40%]">
+                    <h1 class="px-2 py-1 bg-red-700 rounded-[50%] text-white">1</h1>
+                </div>
+                <h3 class="w-full font-bold inline-block text-center">خالد مقدادي</h3>
+                <img src="./imgs/1975193_10152246837917591_523328716_n.png" class="w-[40%]" alt="">
+            </div>
+            <div class="w-full h-0.5 bg-gray-300 mt-4"></div>
+
+        </div>
+    </div>
+    </section>
+    <script src="./js/flowbite.js"></script>
+</body>
+
+</html>

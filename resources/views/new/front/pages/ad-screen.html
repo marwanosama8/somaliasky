@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>اضافة اعلان جدبد</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./style/custome.css">
+    <link rel="stylesheet" href="./style/img-upload.css">
+
+
+</head>
+
+<body dir="rtl">
+    <header>
+        <nav class="bg-transparent border-gray-200 px-2 sm:px-4 py-2.5 rounded dark:bg-gray-900">
+            <div class="container justify-between flex flex-wrap items-center  mx-auto">
+                <a href="#" class="flex items-center">
+                    <img src="./imgs/Page-1.png" class="h-9 mr-3 sm:h-9" alt="Flowbite Logo" />
+
+                </a>
+                <button data-collapse-toggle="navbar-default" type="button"
+                    class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                    aria-controls="navbar-default" aria-expanded="false">
+                    <span class="sr-only">Open main menu</span>
+                    <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd"
+                            d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                            clip-rule="evenodd"></path>
+                    </svg>
+                </button>
+                <div class="hidden w-full md:block md:w-[83%]" id="navbar-default">
+                    <ul
+                        class="flex flex-col p-4 mt-4 border justify-between border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-transparent dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+                        <li>
+                            <a href="#"
+                                class="block py-2 pl-3 pr-4 text-white bg-primary rounded md:bg-transparent md:text-primary md:p-0 dark:text-white"
+                                aria-current="page">الرئيسية</a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-primary md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">الاقسام</a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-primary md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">اللغة</a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-primary md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">المتاجر</a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-primary md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">الدليل
+                                المجاني</a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-primary md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">التسحيل</a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-primary md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">مركز
+                                المساعدة</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="py-4 md:flex-row flex-wrap flex gap-5 md:justify-between justify-center container">
+            <a href="#" class='flex md:w-[33%] gap-6 rounded-md py-3 px-6 bg-primary text-white'>
+                <h1 class="font-bold">انت الزائر رقم</h1>
+                <h1 class="font-bold">2000.00</h1>
+                <h1 class="w-2/12"><img src="./imgs/analysis-svgrepo-com.png" alt="" srcset=""></h1>
+            </a>
+            <a href="#" class=" font-bold rounded-md py-3 px-6 text-white bg-new-black">
+                افتح متجرك الان
+            </a>
+            <a href="#" class=" font-bold rounded-md py-3 px-6 text-white bg-primary">
+                اضف اعلانك هنا
+            </a>
+            <div class="flex items-center">
+                <h4 class="font-bold">
+                    اهلا ! , شادي
+                </h4>
+            </div>
+            <div class="flex items-center w-1/4 md:w-[4%]">
+                <img src="./imgs/1975193_10152246837917591_523328716_n.png" alt="" srcset="">
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <section
+            class=" flex  md:flex-row flex-col flex-wrap items-center p-1  gap-5 border-gray-400 border  rounded-md">
+            <div class="" dir="rtl">
+                <label for="openDropdown" class="border border-gray-400 dropdown">
+                    <i class="fas fa-map-marker-alt text-primary  mt-1"></i>
+                    <span class="ml-16">تحديد المحافظة</span>
+                    <i class="fas fa-caret-down down"></i>
+                </label>
+                <input type="checkbox" id="openDropdown" hidden>
+                <div class="dropdown-menu">
+                    <span>عنصر</span>
+                    <span>عنصر</span>
+                    <span>عنصر</span>
+                    <span>عنصر</span>
+                </div>
+            </div>
+            <div class="" dir="rtl">
+                <label for="openDropdown2" class="border border-gray-400 dropdown">
+                    <i class="fas fas fa-th-large text-primary  mt-1"></i>
+                    <span class="ml-16">تحديد القسم</span>
+                    <i class="fas fa-caret-down down2"></i>
+                </label>
+                <input type="checkbox" id="openDropdown2" hidden>
+                <div class="dropdown-menu2">
+                    <span>عنصر</span>
+                    <span>عنصر</span>
+                    <span>عنصر</span>
+                    <span>عنصر</span>
+                </div>
+            </div>
+            <div class="grow">
+                <div class="flex ">
+                    <input type="text" id="first_name"
+                        class="bg-white border border-gray-400 text-black text-sm rounded-sm focus:ring-blue-500 focus:border-blue-500 block w-full p-1.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                        placeholder="ادخل كلمات بحثك" required>
+                    <button class="bg-primary w-10 rounded-l-md text-white "><i class="fas fa-search"></i></button>
+                </div>
+            </div>
+        </section>
+    </div>
+    <section class="container mt-5">
+        <div class="flex md:flex-row  md:gap-0 gap-3 flex-wrap justify-between w-full items-center bg-white shadow-md p-2">
+            <div class="block md:w-auto w-full ">
+                <h3 class="font-bold text-primary text-lg ml-5">الفئات</h3>
+            </div>
+            <div>
+                <select id="countries"
+                    class="bg-gray-50 border text-center border-gray-300 text-black text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-1.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                    <option selected>عقارات</option>
+                    <option value="US">United States</option>
+                    <option value="CA">Canada</option>
+                    <option value="FR">France</option>
+                    <option value="DE">Germany</option>
+                </select>
+            </div>
+            <div class="">
+                <select id="countries"
+                    class="bg-gray-50 border text-center border-gray-300 text-black text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-1.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                    <option selected>عقارات</option>
+                    <option value="US">United States</option>
+                    <option value="CA">Canada</option>
+                    <option value="FR">France</option>
+                    <option value="DE">Germany</option>
+                </select>
+            </div>
+            <div>
+                <select id="countries"
+                    class="bg-gray-50 border text-center border-gray-300 text-black text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-1.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                    <option selected>عقارات</option>
+                    <option value="US">United States</option>
+                    <option value="CA">Canada</option>
+                    <option value="FR">France</option>
+                    <option value="DE">Germany</option>
+                </select>
+            </div>
+            <div>
+                <select id="countries"
+                    class="bg-gray-50 border text-center border-gray-300 text-black text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-1.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                    <option selected>عقارات</option>
+                    <option value="US">United States</option>
+                    <option value="CA">Canada</option>
+                    <option value="FR">France</option>
+                    <option value="DE">Germany</option>
+                </select>
+            </div>
+            <div>
+                <select id="countries"
+                    class="bg-gray-50 border text-center border-gray-300 text-black text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-1.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                    <option selected>عقارات</option>
+                    <option value="US">United States</option>
+                    <option value="CA">Canada</option>
+                    <option value="FR">France</option>
+                    <option value="DE">Germany</option>
+                </select>
+            </div>
+            <div>
+                <select id="countries"
+                    class="bg-gray-50 border text-center border-gray-300 text-black text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-1.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                    <option selected>عقارات</option>
+                    <option value="US">United States</option>
+                    <option value="CA">Canada</option>
+                    <option value="FR">France</option>
+                    <option value="DE">Germany</option>
+                </select>
+            </div>
+            <div>
+                <select id="countries"
+                    class="bg-gray-50 border text-center border-gray-300 text-black text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-1.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                    <option selected>عقارات</option>
+                    <option value="US">United States</option>
+                    <option value="CA">Canada</option>
+                    <option value="FR">France</option>
+                    <option value="DE">Germany</option>
+                </select>
+            </div>
+            <div>
+                <select id="countries"
+                    class="bg-gray-50 border text-center border-gray-300 text-black text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-1.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                    <option selected>عقارات</option>
+                    <option value="US">United States</option>
+                    <option value="CA">Canada</option>
+                    <option value="FR">France</option>
+                    <option value="DE">Germany</option>
+                </select>
+            </div>
+            <div>
+                <select id="countries"
+                    class="bg-gray-50 border text-center border-gray-300 text-black text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-1.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                    <option selected>عقارات</option>
+                    <option value="US">United States</option>
+                    <option value="CA">Canada</option>
+                    <option value="FR">France</option>
+                    <option value="DE">Germany</option>
+                </select>
+            </div>
+        </div>
+    </section>
+    <section class="container mt-5">
+        <div class="flex md:flex-row  md:gap-3 gap-3 md:flex-nowrap	 flex-wrap ">
+            <div class="rounded-md shadow-md bg-white  p-2 flex md:flex-row  md:gap-0 gap-3 flex-col md:w-[50%] w-[46%] items-center">
+                <div class="md:w-auto "><h3 class="text-primary font-bold text-lg md:ml-5 ml-0 ">فلترة</h3></div>
+                <div class="flex items-center gap-2 ">
+                    <input id="default-checkbox" type="checkbox" value="" class="w-4 h-4 text-blue-600 bg-gray-100 rounded border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                    <label for="default-checkbox" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">مع الصور</label>
+                </div>
+                <div class="flex items-center gap-2 ">
+                    <input id="default-checkbox" type="checkbox" value="" class="w-4 h-4 text-blue-600 bg-gray-100 rounded border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                    <label for="default-checkbox" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">مع الصور</label>
+                </div>
+                <div class="flex items-center gap-2 ">
+                    <input id="default-checkbox" type="checkbox" value="" class="w-4 h-4 text-blue-600 bg-gray-100 rounded border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                    <label for="default-checkbox" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">مع الصور</label>
+                </div>
+                <div class="flex items-center gap-2 ">
+                    <input id="default-checkbox" type="checkbox" value="" class="w-4 h-4 text-blue-600 bg-gray-100 rounded border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                    <label for="default-checkbox" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">مع الصور</label>
+                </div>
+            </div>
+            <div class="rounded-md shadow-md bg-white p-2 flex md:flex-row flex-col md:gap-0 gap-3 md:w-[50%] w-[50%] justify-between items-center">
+                <div><h3 class="text-primary font-bold text-lg md:ml-5 ml-0">السعر</h3></div>
+                <div class="flex items-center gap-2 ">
+                    <label for="default-checkbox" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">من</label>
+                    <input id="default-checkbox" type="text" value="" class="w-14 h-6 text-blue-600 bg-gray-100 rounded border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                </div>
+                <div class="flex items-center gap-2 ">
+                    <label for="default-checkbox" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">الي</label>
+                    <input id="default-checkbox" type="text" value="" class="w-14 h-6 text-blue-600 bg-gray-100 rounded border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                </div>
+                <div class="flex items-center  ">
+                  <a class="text-primary " href="#">احدث</a>
+                </div>
+                <div class="flex items-center gap-2 ">
+                   <a href="#" class="text-white bg-primary py-2 px-5 rounded-md">ابحث الان</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- start mtlob -->
+    <section class="container mt-5">
+        <div class="flex md:flex-row flex-col justify-between gap-5">
+            <!-- card -->
+            <div class="bg-white md:w-1/2 p-2 rounded-lg need-specif-width">
+                <div class="flex items-center justify-between md:flex-row flex-col">
+                    <div class="md:w-[233px] mt-2 mr-3"><img src="./imgs/pexels-curtis-adams-3288102.png" alt=""></div>
+                    <div class="flex flex-col need-specif-width">
+                        <div class="flex flex-col md:items-start items-center py-2 gap-3 mr-7">
+                            <h4 class="font-bold text-2xl">مطلوب مصمم جرافيك </h4>
+                            <h6>الأردن - عمان</h6>
+                            <h6 class="text-primary font-bold">وظائف - الكمبيوتر - تصميم </h6>
+                        </div>
+                        <div class="flex flex-col md:items-end items-center justify-center">
+                            <h1 class="md:ml-10 text-primary font-bold md:mb-2">السعر : 200 د.ا</h1>
+                            <a class="py-2 px-16 bg-primary text-white rounded-md" href="#">مراسلة</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- card -->
+            <div class="bg-white md:w-1/2 p-2 rounded-lg need-specif-width">
+                <div class="flex items-center justify-between md:flex-row flex-col">
+                    <div class="md:w-[233px] mt-2 mr-3"><img src="./imgs/pexels-curtis-adams-3288102.png" alt=""></div>
+                    <div class="flex flex-col need-specif-width">
+                        <div class="flex flex-col md:items-start items-center py-2 gap-3 mr-7">
+                            <h4 class="font-bold text-2xl">مطلوب مصمم جرافيك </h4>
+                            <h6>الأردن - عمان</h6>
+                            <h6 class="text-primary font-bold">وظائف - الكمبيوتر - تصميم </h6>
+                        </div>
+                        <div class="flex flex-col md:items-end items-center justify-center">
+                            <h1 class="md:ml-10 text-primary font-bold md:mb-2">السعر : 200 د.ا</h1>
+                            <a class="py-2 px-16 bg-primary text-white rounded-md" href="#">مراسلة</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="flex justify-between md:flex-row flex-col gap-5 mt-5">
+            <!-- card -->
+            <div class="bg-white md:w-1/2 p-2 rounded-lg need-specif-width">
+                <div class="flex items-center justify-between md:flex-row flex-col">
+                    <div class="md:w-[233px] mt-2 mr-3"><img src="./imgs/pexels-curtis-adams-3288102.png" alt=""></div>
+                    <div class="flex flex-col need-specif-width">
+                        <div class="flex flex-col md:items-start items-center py-2 gap-3 mr-7">
+                            <h4 class="font-bold text-2xl">مطلوب مصمم جرافيك </h4>
+                            <h6>الأردن - عمان</h6>
+                            <h6 class="text-primary font-bold">وظائف - الكمبيوتر - تصميم </h6>
+                        </div>
+                        <div class="flex flex-col md:items-end items-center justify-center">
+                            <h1 class="md:ml-10 text-primary font-bold md:mb-2">السعر : 200 د.ا</h1>
+                            <a class="py-2 px-16 bg-primary text-white rounded-md" href="#">مراسلة</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- card -->
+            <div class="bg-white md:w-1/2 p-2 rounded-lg need-specif-width">
+                <div class="flex items-center justify-between md:flex-row flex-col">
+                    <div class="md:w-[233px] mt-2 mr-3"><img src="./imgs/pexels-curtis-adams-3288102.png" alt=""></div>
+                    <div class="flex flex-col need-specif-width">
+                        <div class="flex flex-col md:items-start items-center py-2 gap-3 mr-7">
+                            <h4 class="font-bold text-2xl">مطلوب مصمم جرافيك </h4>
+                            <h6>الأردن - عمان</h6>
+                            <h6 class="text-primary font-bold">وظائف - الكمبيوتر - تصميم </h6>
+                        </div>
+                        <div class="flex flex-col md:items-end items-center justify-center">
+                            <h1 class="md:ml-10 text-primary font-bold md:mb-2">السعر : 200 د.ا</h1>
+                            <a class="py-2 px-16 bg-primary text-white rounded-md" href="#">مراسلة</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end mtlob -->
+</body>
+
+</html>

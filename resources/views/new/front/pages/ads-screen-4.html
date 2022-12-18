@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الصفحة الرئيسية</title>
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <style>
+        .swiper {
+            width: 874px;
+            height: 224px;
+            margin-left: 0 !important;
+            margin-right: 0 !important;
+        }
+
+        @media (max-width: 1024px) {
+            .swiper {
+                width: 299px;
+                height: 268px;
+                border-radius: 9%;
+
+            }
+        }
+
+        @media (min-width: 767px) {
+            .swiper {
+                width: 301px;
+                height: 274px;
+                border-radius: 9%;
+
+            }
+        }
+
+        .swiper-pagination-bullet {
+            background-color: #fff !important;
+            opacity: 100% !important;
+        }
+
+        .swiper-pagination-bullet-active {
+            background-color: #722F37 !important;
+
+        }
+
+        .need-specif-width {
+            width: -webkit-fill-available;
+
+        }
+    </style>
+</head>
+
+<body dir="rtl">
+    <header>
+        <nav class="bg-transparent border-gray-200 px-2 sm:px-4 py-2.5 rounded dark:bg-gray-900">
+            <div class="container justify-between flex flex-wrap items-center  mx-auto">
+                <a href="#" class="flex items-center">
+                    <img src="./imgs/Page-1.png" class="h-9 mr-3 sm:h-9" alt="Flowbite Logo" />
+
+                </a>
+                <button data-collapse-toggle="navbar-default" type="button"
+                    class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                    aria-controls="navbar-default" aria-expanded="false">
+                    <span class="sr-only">Open main menu</span>
+                    <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd"
+                            d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                            clip-rule="evenodd"></path>
+                    </svg>
+                </button>
+                <div class="hidden w-full md:block md:w-[83%]" id="navbar-default">
+                    <ul
+                        class="flex flex-col p-4 mt-4 border justify-between border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-transparent dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+                        <li>
+                            <a href="#"
+                                class="block py-2 pl-3 pr-4 text-white bg-primary rounded md:bg-transparent md:text-primary md:p-0 dark:text-white"
+                                aria-current="page">الرئيسية</a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-primary md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">الاقسام</a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-primary md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">اللغة</a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-primary md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">المتاجر</a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-primary md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">الدليل
+                                المجاني</a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-primary md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">التسحيل</a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-primary md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">مركز
+                                المساعدة</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="py-4 md:flex-row flex-wrap flex gap-5 md:justify-between justify-center container">
+            <a href="#" class='flex md:w-[33%] gap-6 rounded-md py-3 px-6 bg-primary text-white'>
+                <h1 class="font-bold">انت الزائر رقم</h1>
+                <h1 class="font-bold">2000.00</h1>
+                <h1 class="w-2/12"><img src="./imgs/analysis-svgrepo-com.png" alt="" srcset=""></h1>
+            </a>
+            <a href="#" class=" font-bold rounded-md py-3 px-6 text-white bg-new-black">
+                افتح متجرك الان
+            </a>
+            <a href="#" class=" font-bold rounded-md py-3 px-6 text-white bg-primary">
+                اضف اعلانك هنا
+            </a>
+            <div class="flex items-center">
+                <h4 class="font-bold">
+                    اهلا ! , شادي
+                </h4>
+            </div>
+            <div class="flex items-center w-1/4 md:w-[4%]">
+                <img src="./imgs/1975193_10152246837917591_523328716_n.png" alt="" srcset="">
+            </div>
+        </div>
+    </header>
+    <section class="container mt-5">
+        <div class="my-3">
+            <h1 class="font-bold">الأقسام -- العقارات -- شقق ايجار</h1>
+        </div>
+    </section>
+    <section class="container">
+        <div class="flex md:flex-row flex-col md:justify-between items-center justify-center gap-3">
+            <div>
+                <!-- Slider main container -->
+                <div class="swiper">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide"><img src="./imgs/pexels-curtis-adams-3288102.png" alt="" srcset="">
+                        </div>
+                        <div class="swiper-slide"><img src="./imgs/pexels-curtis-adams-3288102.png" alt="" srcset="">
+                        </div>
+                        <div class="swiper-slide"><img src="./imgs/pexels-curtis-adams-3288102.png" alt="" srcset="">
+                        </div>
+                    </div>
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination "></div>
+                </div>
+            </div>
+            <div class="w-full flex flex-col gap-5">
+                <h3 class="mb-3 font-bold ">شقة 182 م2 مع روف مبني جاهز 80 م2 مع ترس 20 م2 للبيع من المالك مباشرة في شفا
+                    بدران</h3>
+                <h3 class="text-primary">منذ 3 ايام</h3>
+                <h3 class="text-primary">العنوان - عمان - شفا بدران</h3>
+                <div class="flex gap-4">
+                    <h4 class="text-primary font-bold">السعر</h4>
+                    <h4 class="text-primary font-bold">4550$</h4>
+                </div>
+            </div>
+            <div class="flex flex-col items-center justify-between bg-white rounded-lg p-2 md:w-[58%] sm:w-[60%] w-auto ">
+                <div class="md:w-1/2 w-auto"><img src="./imgs/download (2).png" alt=""></div>
+                <div>
+                    <h4 class="font-bold">خالد احمد</h4>
+                </div>
+                <div class="md:w-1/3  w-auto"><img src="./imgs/Group 40.png" alt=""></div>
+                <div class="text-center mt-4"><a class="py-2 px-16 bg-primary rounded-xl text-white font-bold"
+                        href="#">مراسله</a></div>
+                <div class="text-center mt-4"><a class="py-2 px-16 bg-black rounded-xl text-white font-bold"
+                        href="#">مشراكة الاعلان</a></div>
+                        <div class="text-center mt-4"><a class="py-2 px-16 bg-move rounded-xl text-white font-bold"
+                            href="#">مشراكة الاعلان</a></div>
+
+            </div>
+        </div>
+    </section>
+
+        <section class="container mt-5">
+            <div><h1 class="font-bold text-xl">
+                طريقة استلام المنتج
+            </h1></div>
+        </section>
+
+        <section class="container mt-5">
+            <div class="flex flex-wrap fap-3 md:justify-start justify-center gap-4 items-center">
+                <div class="bg-white p-2 border-primary border-4 flex flex-col items-center min-h-[241px] justify-between gap-2 rounded-2xl shadow-lg">
+                    <div class="bg-primary flex flex-col items-center justify-between rounded-2xl p-5 ">
+                        <img class="w-[61%]" src="./imgs/hands-catch-svgrepo-com.png" alt="">
+                    </div>
+                    <h1 class="font-bold text-xl ">استلام مباشر</h1>
+                    <div class="text-center"> 
+                        <a href="#" class="bg-primary py-1 px-4 text-white rounded-2xl font-vold`">مراسلة البائع</a>
+                    </div>
+                    <div class="flex gap-4 text-sm items-center">
+                        <h5 class="font-bold ">رقم الهاتف</h5>
+                        <h5>078099733</h5>
+                    </div>
+                </div>
+                <div class="bg-white p-2 flex flex-col items-center justify-center min-h-[241px] w-[182px] gap-5  rounded-2xl shadow-lg">
+                    <div class="bg-primary flex flex-col items-center justify-center  rounded-2xl p-5 mb-2 ">
+                        <img class="w-full" src="./imgs/delivery-van-svgrepo-com.png" alt="">
+                    </div>
+                    <h1 class="font-bold text-xl ">استلام مباشر</h1>
+                    <div class="text-center"> 
+                        <a href="#" class="bg-primary py-1 px-4 text-white rounded-2xl font-vold`">مراسلة البائع</a>
+                    </div>
+                </div>
+                <div class="bg-white p-2 h-auto flex flex-col items-center justify-center min-h-[241px]  w-[182px] gap-5 rounded-2xl shadow-lg">
+                    <div class="bg-primary flex flex-col items-center justify-center rounded-2xl mb-2 w-[166px] p-5 ">
+                        <img class="w-[62%]" src="./imgs/delivery-man-driver-svgrepo-com.png" alt="">
+                    </div>
+                    <h1 class="font-bold text-xl ">استلام مباشر</h1>
+                    <div class="text-center"> 
+                        <a href="#" class="bg-primary py-1 px-4 text-white rounded-2xl font-vold`">مراسلة البائع</a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            // Optional parameters
+            direction: 'horizontal',
+            loop: true,
+
+            // If we need pagination
+            pagination: {
+                el: '.swiper-pagination',
+            },
+
+            // Navigation arrows
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+
+            // And if we need scrollbar
+            scrollbar: {
+                el: '.swiper-scrollbar',
+            },
+        });
+    </script>
+</body>
+
+</html>
