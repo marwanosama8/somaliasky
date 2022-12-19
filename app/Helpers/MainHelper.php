@@ -105,7 +105,7 @@ class MainHelper
             'title'=>$options['error'],
             'code'=>$options['error_code'],
             'url'=>url()->previous(),
-            'ip'=>\UserSystemInfoHelper::get_ip(),
+            'ip'=>\App\Helpers\UserSystemInfoHelper::get_ip(),
             'user_agent'=>request()->header('User-Agent'),
             'request'=>json_encode(request()->all()),
             'description'=>$options['details']
