@@ -9,7 +9,6 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Pagination\Paginator;
 use Illuminate\Support\Facades\Session;
 use View;
-use Illuminate\Routing\UrlGenerator;
 
 
 class AppServiceProvider extends ServiceProvider
@@ -28,13 +27,13 @@ class AppServiceProvider extends ServiceProvider
      *
      * @return void
      */
-    public function boot(UrlGenerator $url)
+    public function boot()
     {
 
         // \App\Models\ContactReply::observe(\App\Observers\ContactReplyObserver::class);
         // \App\Models\Contact::observe(\App\Observers\ContactObserver::class);
         // request()->ip();
-        $url->forceSchema('https');
+\Illuminate\Support\Facades\URL::forceScheme('http');
 
         Paginator::useBootstrapFive();
         Schema::defaultStringLength(191);
