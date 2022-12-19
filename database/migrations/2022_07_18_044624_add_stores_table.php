@@ -29,9 +29,7 @@ return new class () extends Migration {
             $table->integer('blocked')->default(0);
             $table->timestamps();
 
-            $table->foreign('user_id')->references('id')->on("users")->onDelete('cascade')->onUpdate('cascade');
-            $table->foreign('category_id')->references('id')->on("categories")->onDelete('cascade')->onUpdate('cascade');
-            $table->foreign('city_id')->references('id')->on("cities")->onDelete('cascade')->onUpdate('cascade');
+
         });
     }
 
