@@ -2,12 +2,15 @@
 
 namespace App\Providers;
 
+
 use Illuminate\Http\Request;
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Support\Facades\Schema;
 use Illuminate\Pagination\Paginator;
 use Illuminate\Support\Facades\Session;
 use View;
+use Illuminate\Routing\UrlGenerator;
+
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -25,15 +28,14 @@ class AppServiceProvider extends ServiceProvider
      *
      * @return void
      */
-    public function boot()
+    public function boot(UrlGenerator $url)
     {
 
         // \App\Models\ContactReply::observe(\App\Observers\ContactReplyObserver::class);
         // \App\Models\Contact::observe(\App\Observers\ContactObserver::class);
         // request()->ip();
-if($this->app->environment('production')) {
-    \URL::forceScheme('http');
-}
+        $url->forceSchema('https');
+
         Paginator::useBootstrapFive();
         Schema::defaultStringLength(191);
         if (Schema::hasTable('settings')) {
