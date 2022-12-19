@@ -31,7 +31,9 @@ class AppServiceProvider extends ServiceProvider
         // \App\Models\ContactReply::observe(\App\Observers\ContactReplyObserver::class);
         // \App\Models\Contact::observe(\App\Observers\ContactObserver::class);
         // request()->ip();
-
+if($this->app->environment('production')) {
+    \URL::forceScheme('https');
+}
         Paginator::useBootstrapFive();
         Schema::defaultStringLength(191);
         if (Schema::hasTable('settings')) {
