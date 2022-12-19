@@ -20,7 +20,7 @@ return new class () extends Migration {
             $table->text('title')->nullable();
             $table->text('description')->nullable();
             $table->integer('is_featured')->default(0);
-            $table->double('price', 8, 2)->nullable()->default(0.00);
+            $table->double('price')->nullable()->default(0.00);
             $table->integer('status')->default(1);
             $table->text('images')->nullable();
             $table->timestamps();
