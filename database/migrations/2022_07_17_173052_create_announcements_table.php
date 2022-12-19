@@ -18,7 +18,7 @@ return new class () extends Migration {
             $table->unsignedBigInteger('category_id')->nullable();
             $table->unsignedBigInteger('city_id')->nullable();
             $table->text('title')->nullable();
-            $table->longText('description')->nullable();
+            $table->text('description')->nullable();
             $table->integer('is_featured')->default(0);
             $table->double('price', 8, 2)->nullable()->default(0.00);
             $table->integer('status')->default(1);
