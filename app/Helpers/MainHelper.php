@@ -94,22 +94,23 @@ class MainHelper
 
     public static function make_error_report(
         $options=[]
-    ) {
-        $options = array_merge([
-            'error'=>"",
-            'error_code'=>"",
-            'details'=>json_encode(request()->instance())
-        ], $options);
-        \App\Models\ReportError::create([
-            'user_id'=>(auth()->check()?auth()->user()->id:null),
-            'title'=>$options['error'],
-            'code'=>$options['error_code'],
-            'url'=>url()->previous(),
-            'ip'=>\App\Helpers\UserSystemInfoHelper::get_ip(),
-            'user_agent'=>request()->header('User-Agent'),
-            'request'=>json_encode(request()->all()),
-            'description'=>$options['details']
-        ]);
+    )
+        {
+//         $options = array_merge([
+//             'error'=>"",
+//             'error_code'=>"",
+//             'details'=>json_encode(request()->instance())
+//         ], $options);
+//         \App\Models\ReportError::create([
+//             'user_id'=>(auth()->check()?auth()->user()->id:null),
+//             'title'=>$options['error'],
+//             'code'=>$options['error_code'],
+//             'url'=>url()->previous(),
+//             'ip'=>\App\Helpers\UserSystemInfoHelper::get_ip(),
+//             'user_agent'=>request()->header('User-Agent'),
+//             'request'=>json_encode(request()->all()),
+//             'description'=>$options['details']
+//         ]);
     }
     public static function binaryToString($binary)
     {
