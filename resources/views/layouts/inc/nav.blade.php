@@ -118,7 +118,7 @@
 
 
     </nav>
-    <div class="d-flex container justify-content-between align-items-center">
+    <div class="d-flex container justify-content-between align-items-center" style="flex-flow: column; gap: 5px;">
         <a href="#" style="background: #722f37 !important;
                             color: white !important;"
             class='d-flex text-light py-3 px-2 rounded justify-content-between align-items-center  gap-3 '>
