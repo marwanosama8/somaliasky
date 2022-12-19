@@ -32,7 +32,7 @@ class AppServiceProvider extends ServiceProvider
         // \App\Models\Contact::observe(\App\Observers\ContactObserver::class);
         // request()->ip();
 if($this->app->environment('production')) {
-    \URL::forceScheme('https');
+    \URL::forceScheme('http');
 }
         Paginator::useBootstrapFive();
         Schema::defaultStringLength(191);
