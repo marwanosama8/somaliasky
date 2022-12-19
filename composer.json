@@ -13,7 +13,7 @@
         "doctrine/dbal": "*",
         "guzzlehttp/guzzle": "^6.5|^7.0.1",
         "intervention/image": "^2.7",
-        "kreait/laravel-firebase": "^4.1",
+        "kreait/laravel-firebase": "*",
         "laravel/framework": "^9.10",
         "laravel/sanctum": "^2.11",
         "laravel/socialite": "^5.5",
