@@ -25,9 +25,9 @@ class DatabaseSeeder extends Seeder
             // SettingsSeeder::class,
             // PagesSeeder::class,
             // MenusSeeder::class,
-            // \Database\Seeders\CitySeeder::class,
-            // \Database\Seeders\CountrySeeder::class
-             \Database\Seeders\CounterSeeder::class
+             \Database\Seeders\CitySeeder::class,
+             \Database\Seeders\CountrySeeder::class,
+//              \Database\Seeders\CounterSeeder::class
         ]);
     }
 }
