@@ -1,3 +1,14 @@
+@section('styles')
+<style>
+
+    @media (max-width: 1025px) {
+        .new-nav {
+            flex-flow: column;
+             gap: 5px;
+        }
+    }
+    </style>
+@endsection
 <div class="container-fluid px-3 py-2 font-2 fw-bold">
     <form method="POST" action="{{ route('logout') }}" id="logout-form" class="d-none">@csrf</form>
     <nav class="navbar navbar-expand-lg">
@@ -118,7 +129,7 @@
 
 
     </nav>
-    <div class="d-flex container justify-content-between align-items-center" style="flex-flow: column; gap: 5px;">
+    <div class="d-flex container justify-content-between align-items-center new-nav">
         <a href="#" style="background: #722f37 !important;
                             color: white !important;"
             class='d-flex text-light py-3 px-2 rounded justify-content-between align-items-center  gap-3 '>
