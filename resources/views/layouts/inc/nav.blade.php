@@ -1,6 +1,4 @@
-@section('styles')
 <style>
-
     @media (max-width: 1025px) {
         .new-nav {
             flex-flow: column;
@@ -8,7 +6,6 @@
         }
     }
     </style>
-@endsection
 <div class="container-fluid px-3 py-2 font-2 fw-bold">
     <form method="POST" action="{{ route('logout') }}" id="logout-form" class="d-none">@csrf</form>
     <nav class="navbar navbar-expand-lg">
