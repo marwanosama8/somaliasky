@@ -157,7 +157,7 @@
         }
     </style>
     <link rel="stylesheet" href="{{ asset('css/pace-theme-default.min.css') }}">
-    <link rel="stylesheet" type="text/css" href="{{ asset('css/toastr.min.css',false) }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/toastr.min.css',true) }}">
     <link rel="stylesheet" href="{{ asset('css/fancybox.css') }}" />
     <link rel="stylesheet" type="text/css" href="{{ asset('/css/font-fileuploader.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ asset('/css/jquery.fileuploader.min.css') }}">
