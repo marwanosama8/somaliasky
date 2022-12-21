@@ -8,15 +8,12 @@
     ## WWW & HTTPS
 
     # ensure https
-    RewriteCond %{HTTP:X-Forwarded-Proto} !https
-    RewriteCond %{HTTPS} off
-    RewriteRule ^ http://138.68.134.23/%{REQUEST_URI} [L,R=301]
+
 
     ### WWW & HTTPS
 
     # Handle Authorization Header
-    RewriteCond %{HTTP:Authorization} .
-    RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+
 
     # Redirect Trailing Slashes If Not A Folder...
     RewriteCond %{REQUEST_FILENAME} !-d
