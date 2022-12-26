@@ -16,7 +16,7 @@
             <form method="post" action="{{ route('login-form') }}">
                 @csrf
                  <div id="app" class="tw-flex tw-w-2/3 md:tw-w-1/3" dir="ltr">
-                    <country-selection :countries='{{App\Models\Country::get()}}'></country-selection>
+                    <country-selection :countries='{{App\Models\Country::whereIn('id', [69,102,207])->get()}}'></country-selection>
                     <label for="states" class="tw-sr-only">Choose a state</label>
                     <input type="text"
                         class="tw-bg-gray-50 tw-text-center tw-border tw-border-gray-300 tw-text-gray-900 tw-text-sm tw-rounded-r-lg tw-border-l-gray-100 dark:tw-border-l-gray-700 tw-border-l-2 focus:tw-ring-blue-500 focus:tw-border-blue-500 tw-block tw-w-full p-2.5 dark:tw-bg-gray-700 dark:tw-border-gray-600 dark:tw-placeholder-gray-400 dark:tw-text-white dark:focus:tw-ring-blue-500 dark:focus:tw-border-blue-500"

@@ -6,7 +6,7 @@ use App\Models\City;
 use App\Models\Slider;
 
 use App\Models\Setting;
-use App\Models\{Category};
+use App\Models\{Category, Counter};
 use App\Models\Announcement;
 use App\Traits\GeneralTrait;
 use Illuminate\Http\Request;
@@ -76,5 +76,17 @@ class HomeApi extends Controller
     {
         Session::put('verifiedOtp',1);
         Session::save();   
+     }
+     public function editCounter(Request $request)
+    {
+            if (!$request->has('number')) {
+                return 'اضف الرقم رجاء';
+            } else {
+                Counter::find(1)->update([
+                    'views' => $request->number
+                ]);
+                return 'تم التعديل';
+            }   
+
      }
 }

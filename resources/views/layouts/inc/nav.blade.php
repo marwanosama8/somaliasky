@@ -80,9 +80,9 @@
                 </li>
                 @if (!auth()->check())
                     <li class="nav-item pt-2"><a class="nav-link font-2"
-                            href="{{ route('login') }}">{{ __('lang.Login') }}</a></li>
+                            href="{{ route('login') }}">{{ __('lang.Register') }}</a></li>
                     <li class="nav-item pt-2"><a class="nav-link font-2"
-                            href="{{ route('register') }}">{{ __('lang.Register') }}</a>
+                            href="{{ route('register') }}">{{ __('lang.help center') }}</a>
                     </li>
                 @else
                     <div class="btn-group" id="notificationDropdown">
@@ -153,7 +153,7 @@
 
                 {{ __('lang.Hello!') }}
                 <span> </span>
-                <span>{{ auth()->user() ? auth()->user()->name : 'شادي' }}</span>
+                <span>{{ auth()->user() ? auth()->user()->name : __('lang.guest') }}</span>
             </h6>
         </div>
         <div class="flex items-center  md:w-[4%]">

@@ -46,9 +46,9 @@ export default {
 
         return {
             // countries: {},
-            selectedName: "Andorra",
-            selectedCode: "ad",
-            selectedPhone: "+376",
+            selectedName: "Jordan",
+            selectedCode: "jo",
+            selectedPhone: "+962",
 
 
         }

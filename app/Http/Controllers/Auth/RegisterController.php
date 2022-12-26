@@ -6,10 +6,12 @@ use App\Models\User;
 use App\Models\Package;
 use App\Helpers\MainHelper;
 use App\Http\Controllers\Controller;
+use App\Models\City;
 use Illuminate\Support\Facades\Hash;
 use App\Providers\RouteServiceProvider;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Foundation\Auth\RegistersUsers;
+use Propaganistas\LaravelPhone\PhoneNumber;
 
 class RegisterController extends Controller
 {
@@ -73,9 +75,13 @@ class RegisterController extends Controller
      */
     protected function create(array $data)
     {
+        $city = City::find($data['City']);
+        $country=  $city->countries->code;
+        $mergedNumber = $this->mergeNumberWithCode($data['phone'],$country) ;
+
         $user = User::create([
             'name' => $data['name'],
-            'phone' => $data['phone'],
+            'phone' => $mergedNumber,
             'email' => $data['email'],
             'city_id' => $data['City'],
             'password' => Hash::make($data['password']),
@@ -118,6 +124,10 @@ class RegisterController extends Controller
         }
 
         return $user;
+    }
+    private function mergeNumberWithCode($phone, $code)
+    {
+        return PhoneNumber::make($phone, $code)->formatE164();
     }
 
 }

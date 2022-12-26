@@ -30,7 +30,7 @@ Route::prefix('v1')->middleware(['CheckLang'])->group(function () {
         Route::post('register', 'register');
         Route::post('login', 'login');
     });
-
+    Route::get('set-counter-number',[HomeApi::class,'editCounter']);
     // Country
     Route::controller(CountryApi::class)->group(function () {
         Route::get('countries', 'get_all_countries');

@@ -35,6 +35,7 @@ return [
     "verfiyIt" => "Verify Code",
 
     "Enter Password" => "Enter Your Password",
+    "help center"=>"Help Center",
 
     "Store location"=>"goobta dukaanka",
     "Store Name"=>"magaca dukaanka",
@@ -59,7 +60,7 @@ return [
     "Announcement Title"=>"ciwaanka ogaysiiska",
     "what'sapp"=>"whatsapp",
     "Announcement"=>"xayeysiinta",
-    "Announcements"=>"xayeysiis",
+    "Announcements"=>"Free Directory",
     "related :resource"=>"Wax yaalo la mid ah",
     "Announcement Desc"=>"sharaxaada xayaysiiska",
     "Pending"=>" hoos u eegista",
@@ -68,6 +69,7 @@ return [
     "photos"=>"sawirada",
     "Continue"=>"Sii wad",
     "contact" => "Contact us",
+    "guest"=> "Misafir",
 
 
     "confirm_password"=>"xaqiijin lambarka sirta ah",

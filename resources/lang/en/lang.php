@@ -27,6 +27,7 @@ return [
 "sendIt" => "Send OTP",
 "verfiyCode" => "Add verification code",
 "verfiyIt" => "Verify Code",
+"help center"=>"Help Center",
 
 "job"=>"Job",
 "skills"=>"Skills",
@@ -45,6 +46,7 @@ return [
 "Store Button"=>"Create Store",
 "Store Desc"=>"Store Descsription",
 "Store msg"=>"Fill All Inputs and Create Your Store Now",
+"guest"=> "Guest",
 
 "messages"=>"Messages",
 "attributes"=>"Attributes",
@@ -52,7 +54,7 @@ return [
 "from"=>"From",
 "Send"=>"Send Message",
 "Announcement" => "Announcement",
-"Announcements"=>"Announcements",
+"Announcements"=>"Free Directory",
 "related :resource"=> "Related :resource",
 "Share :name"=>"Share :name",
 "Announcement Publiched"=>"Announcement Publiched",

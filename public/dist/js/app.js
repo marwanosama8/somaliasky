@@ -22634,9 +22634,9 @@ __webpack_require__.r(__webpack_exports__);
   data: function data() {
     return {
       // countries: {},
-      selectedName: "Andorra",
-      selectedCode: "ad",
-      selectedPhone: "+376"
+      selectedName: "Jordan",
+      selectedCode: "jo",
+      selectedPhone: "+962"
     };
   },
   components: {
@@ -45848,7 +45848,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _CountrySelection_vue_vue_type_template_id_2b2a8bfe_scoped_true__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./CountrySelection.vue?vue&type=template&id=2b2a8bfe&scoped=true */ "./resources/js/components/CountrySelection.vue?vue&type=template&id=2b2a8bfe&scoped=true");
 /* harmony import */ var _CountrySelection_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./CountrySelection.vue?vue&type=script&lang=js */ "./resources/js/components/CountrySelection.vue?vue&type=script&lang=js");
 /* harmony import */ var _CountrySelection_vue_vue_type_style_index_0_id_2b2a8bfe_scoped_true_lang_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./CountrySelection.vue?vue&type=style&index=0&id=2b2a8bfe&scoped=true&lang=css */ "./resources/js/components/CountrySelection.vue?vue&type=style&index=0&id=2b2a8bfe&scoped=true&lang=css");
-/* harmony import */ var _home_marwan_Sites_SomaliaSky_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./node_modules/vue-loader/dist/exportHelper.js */ "./node_modules/vue-loader/dist/exportHelper.js");
+/* harmony import */ var _home_marwan_Sites_new_somaliasky_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./node_modules/vue-loader/dist/exportHelper.js */ "./node_modules/vue-loader/dist/exportHelper.js");
 
 
 
@@ -45856,7 +45856,7 @@ __webpack_require__.r(__webpack_exports__);
 ;
 
 
-const __exports__ = /*#__PURE__*/(0,_home_marwan_Sites_SomaliaSky_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_3__.default)(_CountrySelection_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__.default, [['render',_CountrySelection_vue_vue_type_template_id_2b2a8bfe_scoped_true__WEBPACK_IMPORTED_MODULE_0__.render],['__scopeId',"data-v-2b2a8bfe"],['__file',"resources/js/components/CountrySelection.vue"]])
+const __exports__ = /*#__PURE__*/(0,_home_marwan_Sites_new_somaliasky_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_3__.default)(_CountrySelection_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__.default, [['render',_CountrySelection_vue_vue_type_template_id_2b2a8bfe_scoped_true__WEBPACK_IMPORTED_MODULE_0__.render],['__scopeId',"data-v-2b2a8bfe"],['__file',"resources/js/components/CountrySelection.vue"]])
 /* hot reload */
 if (false) {}
 
